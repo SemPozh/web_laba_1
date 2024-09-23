@@ -1,0 +1,380 @@
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    color: #fff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!! MAIN !!!!!!!!!!!!!!!!!!!!!!*/
+
+/* common */
+
+body{
+    height: 100%;
+    background: linear-gradient(to right top, #73bfb6, #b07bed);
+    font-family: FreeMono, monospace;
+    color: #fff;
+}
+
+
+/* Header */
+
+#header-table{
+    width: 100%;
+}
+
+#header td#bio{
+    width: 15%;
+    font-size: 16px;
+    text-align: left;
+    font-family: cursive;
+}
+
+#header td{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#header{
+    height: 200px;
+    vertical-align: top;
+}
+
+#header td#header_title{
+    padding-left: 25%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Main */
+#main-table{
+    padding: 0 15%;
+    border-spacing: 20px;
+    width: 100%;
+}
+.gui-element{
+    border: 2px solid white;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#input-block{
+    padding: 10px;
+    width: 50%;
+}
+
+
+#input-block form div{
+    text-align: center;
+}
+
+#input-block form label{
+    margin-bottom: 10px;
+    display: block;
+    text-align: center ;
+}
+
+#r-label{
+    margin-top: 20px;
+}
+
+.x-choose_input{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 5px;
+    width: 80px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.y-choose_input{
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    background-color: white;
+}
+
+input.incorrect{
+    border: 2px solid #f74a81;
+    background-color: #ff99b9;
+}
+
+.y-choose_input::placeholder{
+    color: #7d7d7d;
+}
+
+
+.form_radio_btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+.form_radio_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px 15px;
+    line-height: 34px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    user-select: none;
+}
+
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+    background: #ffffff;
+    color: black;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+    color: #000;
+    background-color: #cee9f0;
+}
+
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled + label {
+    background: #efefef;
+    color: #666;
+}
+
+
+
+
+
+
+.form_radio_btn {
+    display: inline-block;
+    margin-right: 10px;
+}
+.form_radio_btn input[type=checkbox] {
+    display: none;
+}
+.form_radio_btn label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 15px;
+    line-height: 34px;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    user-select: none;
+}
+
+/* Checked */
+.form_radio_btn input[type=checkbox]:checked + label {
+    background: #ffffff;
+    color: black;
+}
+
+/* Hover */
+.form_radio_btn label:hover {
+    color: #000;
+    background-color: #cee9f0;
+}
+
+/* Disabled */
+.form_radio_btn input[type=checkbox]:disabled + label {
+    background: #efefef;
+    color: #666;
+}
+
+.error_text{
+    text-align: center;
+    color: #f74a81;
+    font-size: 17px;
+    display: none;
+}
+
+
+
+
+
+
+
+#visualization-block{
+    width: 50%;
+    padding: 10px;
+}
+
+#frame{
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+
+}
+
+#figureCanvas{
+    /*border: 1px solid black;*/
+}
+
+#submitButton{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    display: block;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+
+/* Data */
+#data-table{
+    padding: 0 calc(15%);
+    border-spacing: 20px;
+    width: 100%;
+}
+
+table#results{
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+table#results thead tr {
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    padding: 15px 15px;
+    background: #fff;
+    font-size: 16px;
+}
+
+table#results thead th{
+    color: black;
+    padding: 10px 20px;
+}
+table#results thead tr th:first-child {
+    border-radius: 8px 0 0 8px;
+}
+table#results thead tr th:last-child {
+    border-radius: 0 8px 8px 0;
+}
+table#results tbody td {
+    text-align: center;
+    border: none;
+    padding: 15px 15px;
+    font-size: 14px;
+    vertical-align: top;
+    color: black;
+}
+table#results tbody tr{
+    background: #fff;
+
+}
+table#results tbody tr td:first-child {
+    border-radius: 8px 0 0 8px;
+}
+table#results tbody tr td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+#data-block{
+    vertical-align: top;
+}
+
+
+/* Footer */
+
+#footer-table{
+    height: 124px;
+    padding: 0 20px;
+}
+
+#footer-table p{
+    vertical-align: bottom;
+}
+
+#footer-table img{
+    width: 100px;
+}
+
